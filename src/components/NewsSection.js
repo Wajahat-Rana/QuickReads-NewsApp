@@ -50,7 +50,7 @@ export default class NewsSection extends Component {
         <h1 className="text-center">QuickReads-NewsApp</h1>
         {this.state.loading && <Loader/>}
         <div className="row">
-          {!this.state.loading && this.state.articles.map((article) => {
+          {this.state.articles && !this.state.loading && this.state.articles.map((article) => {
             return (
               <div className="col-md-4" key={article.url}>
                 <NewsItem
