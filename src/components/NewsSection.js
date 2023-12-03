@@ -47,7 +47,7 @@ export default class NewsSection extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="text-center">QuickReads-NewsApp</h1>
+        <h1 style={{fontSize: '2rem',margin:'15px 0px'}}  className="text-center my-6">QuickReads-Headlines</h1>
         {this.state.loading && <Loader/>}
         <div className="row">
           {this.state.articles && !this.state.loading && this.state.articles.map((article) => {

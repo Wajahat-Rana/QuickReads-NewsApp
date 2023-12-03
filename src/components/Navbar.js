@@ -1,11 +1,13 @@
 import React, { Component } from "react";
+import Icon from './icon.png'
 
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg sticky-top bg-light bg-body-tertiary ">
         <div className="container-fluid">
-          <a className="navbar-brand" href="/">
+          <a className="navbar-brand d-flex justify-content-center align-items-center" href="/">
+            <img src={Icon} alt="" width="40" height="40" className="d-inline-block align-text-top" />
             QuickReads-NewsApp
           </a>
           <button
