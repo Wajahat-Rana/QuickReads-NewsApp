@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/QuickReads-NewsApp/static/css/main.f9577d05.css",
+    "main.js": "/QuickReads-NewsApp/static/js/main.9de80493.js",
+    "static/js/787.01ca00bb.chunk.js": "/QuickReads-NewsApp/static/js/787.01ca00bb.chunk.js",
+    "static/media/Book.gif": "/QuickReads-NewsApp/static/media/Book.cbf51cb4144f94deae58.gif",
+    "index.html": "/QuickReads-NewsApp/index.html",
+    "main.f9577d05.css.map": "/QuickReads-NewsApp/static/css/main.f9577d05.css.map",
+    "main.9de80493.js.map": "/QuickReads-NewsApp/static/js/main.9de80493.js.map",
+    "787.01ca00bb.chunk.js.map": "/QuickReads-NewsApp/static/js/787.01ca00bb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f9577d05.css",
+    "static/js/main.9de80493.js"
+  ]
+}
