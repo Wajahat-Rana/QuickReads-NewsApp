@@ -13,7 +13,7 @@ export default class NewsSection extends Component {
   }
 
   async componentDidMount() {
-    let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5ab58c6dffca4f698964245046bde16b&page=1&pageSize=${this.props.pageSize}`;
+    let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=5ab58c6dffca4f698964245046bde16b&page=1&pageSize=${this.props.pageSize}`;
     this.setState({loading : true})
     let data = await fetch(apiUrl);
     let parsedData = await data.json();
@@ -25,7 +25,7 @@ export default class NewsSection extends Component {
   }
 
   handlePrevious = async () => {
-    let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5ab58c6dffca4f698964245046bde16b&page=${this.state.page - 1
+    let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=5ab58c6dffca4f698964245046bde16b&page=${this.state.page - 1
       }&pageSize=${this.props.pageSize}`;
     this.setState({loading : true})
     let data = await fetch(apiUrl);
@@ -33,7 +33,7 @@ export default class NewsSection extends Component {
     this.setState({ articles: parsedData.articles, page: this.state.page - 1 ,loading : false});
   };
   handleNext = async () => {
-      let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=5ab58c6dffca4f698964245046bde16b&page=${this.state.page + 1
+      let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=5ab58c6dffca4f698964245046bde16b&page=${this.state.page + 1
         }&pageSize=${this.props.pageSize}`;
     this.setState({loading : true})
       let data = await fetch(apiUrl);
@@ -65,7 +65,7 @@ export default class NewsSection extends Component {
                       ? article.description.slice(0, 140)
                       : "Click ReadMore to see details"
                   }
-                  newsUrl={article.url}
+                  newsUrl={article.url} source = {article.source.name?article.source.name:'Unknown'} author = {article.author?article.author:'Unknown'} dated = {new Date(article.publishedAt).toUTCString()}
                 />
               </div>
             );
