@@ -3,7 +3,7 @@ import React, { Component } from "react";
 export default class NewsItem extends Component {
   render() {
     //Destructuring
-    const { title, description, imgUrl, newsUrl , source, author,dated } = this.props;
+    const { title, description, imgUrl, newsUrl , source,dated } = this.props;
     return (
       <div className="card" style={{ width: "18rem" }}>
         <img
@@ -26,8 +26,8 @@ export default class NewsItem extends Component {
               ? description
               : "Google LLC is an American multinational technology company focusing on artificial intelligence, online advertising, search engine technology, cloud computing, computer software, quantum computing, e-commerce, and consumer electronics."}
           </p>
-          <p class="card-text"><small class="text-body-secondary">{dated}</small></p>
-          <p class="card-text"><small class="text-body-secondary">Source: {source}</small></p>
+          <p className="card-text"><small className="text-body-secondary">{dated}</small></p>
+          <p className="card-text"><small className="text-body-secondary">Source: {source}</small></p>
           <a rel="noreferrer" href={newsUrl}target="_blank" className="btn btn-sm btn-dark" >
             Read More
           </a>

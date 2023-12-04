@@ -34,18 +34,18 @@ export default class Navbar extends Component {
                   About
                 </Link>
               </li>
-            <li class="nav-item dropdown">
-          <Link class="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li className="nav-item dropdown">
+          <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Categories
           </Link>
-          <ul class="dropdown-menu">
-          <li><Link class="dropdown-item" to="/general">General</Link></li>
-          <li><Link class="dropdown-item" to="/health">Health</Link></li>
-          <li><Link class="dropdown-item" to="/technology">Technology</Link></li>
-          <li><Link class="dropdown-item" to="/entertainment">Entertainment</Link></li>
-          <li><Link class="dropdown-item" to="/business">Business</Link></li>
-          <li><Link class="dropdown-item" to="sports">Sports</Link></li>
-          <li><Link class="dropdown-item" to="/science">Science</Link></li>
+          <ul className="dropdown-menu">
+          <li><Link className="dropdown-item" to="/general">General</Link></li>
+          <li><Link className="dropdown-item" to="/health">Health</Link></li>
+          <li><Link className="dropdown-item" to="/technology">Technology</Link></li>
+          <li><Link className="dropdown-item" to="/entertainment">Entertainment</Link></li>
+          <li><Link className="dropdown-item" to="/business">Business</Link></li>
+          <li><Link className="dropdown-item" to="sports">Sports</Link></li>
+          <li><Link className="dropdown-item" to="/science">Science</Link></li>
           </ul>
         </li>
             </ul>
