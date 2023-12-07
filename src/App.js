@@ -10,7 +10,8 @@ export default class App extends Component {
       <BrowserRouter>
         <Navbar/>
         <Routes>
-          <Route path='/' element={<NewsSection  key="default" pageSize = {15} category = "general"/>}></Route>
+          <Route path={'/QuickReads-NewsApp'} element={<NewsSection  key="default-Name" pageSize = {15} category = "general"/>}></Route>
+          <Route path={'/'} element={<NewsSection  key="default" pageSize = {15} category = "general"/>}></Route>
           <Route path='/general' element={<NewsSection  key="general" pageSize = {15} category = "general"/>}></Route>
           <Route path='/business' element={<NewsSection  key="business" pageSize = {15} category = "business"/>}></Route>
           <Route path='/health' element={<NewsSection  key="health" pageSize = {15} category = "health"/>}></Route>
