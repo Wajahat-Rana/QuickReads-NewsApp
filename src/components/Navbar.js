@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 
 const Navbar = ()=> {
     return (
-      <nav className="navbar navbar-expand-lg sticky-top bg-light bg-body-tertiary py-1">
+      <nav className="navbar navbar-expand-lg sticky-top bg-dark  navbar-dark py-0">
         <div className="container-fluid">
           <Link className="navbar-brand d-flex justify-content-center align-items-center" to="/">
             <img src={Icon} alt="" width="40" height="40" className="d-inline-block align-text-top" />

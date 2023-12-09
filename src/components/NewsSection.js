@@ -29,8 +29,8 @@ const NewsSection = (props)=>{
   
   const fetchMoreData = async()=>{
     setLoading(true)
+    let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=${props.pageSize}`;
     setPage(page+1)
-    let apiUrl = `https://newsapi.org/v2/top-headlines?country=us&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=${props.pageSize}`;
     let data = await fetch(apiUrl);
     let parsedData = await data.json();
     setArticles(articles.concat(parsedData.articles))
@@ -61,7 +61,6 @@ const NewsSection = (props)=>{
     <div className="container">
         <div className="row">
           {articles.map((article,index) => {
-            console.log(article.url);
             return (
               <div className="col-md-4" key={`${article.url}_${index}`}>
                 <NewsItem
