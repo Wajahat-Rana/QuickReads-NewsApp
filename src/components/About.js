@@ -1,9 +1,9 @@
 // Import necessary dependencies
-import React, { Component } from 'react';
+import React from 'react';
 
 // Define the About component as a class
-class About extends Component {
-  render() {
+const About = ()=> {
+  
     return (
       <div className="container mt-4">
         <h2>About QuickReads NewsApp</h2>
@@ -32,7 +32,7 @@ class About extends Component {
         </footer>
       </div>
     );
-  }
+
 }
 
 export default About;
